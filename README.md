@@ -1,7 +1,7 @@
 Install Dependencis
 npm i @reduxjs/toolkit react-redux react-bootstrap react-hook-form sass
 
-Live site: https://testing-task-live.vercel.app/
+Live site: https://task-management-system-nu.vercel.app/
 
 How All are done
 - **Test Overview**
