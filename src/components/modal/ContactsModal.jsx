@@ -59,7 +59,7 @@ const ContactsModal = ({ show, handleClose, title }) => {
   const handleInnerModal = (innerModalTitle) => {
     let selectedContacts = [];
 
-    if (innerModalTitle === "All Countries Contacts Here 🌐 (A)") {
+    if (innerModalTitle === "All Countries Contacts 🌐 (A)") {
       selectedContacts = allContacts.results;
     } else {
       selectedContacts = usContacts.results;
@@ -91,7 +91,7 @@ const ContactsModal = ({ show, handleClose, title }) => {
         <div className="d-flex justify-content-between">
           <button
             onClick={() =>
-              handleInnerModal("All Countries Contacts Here 🌐 (A)")
+              handleInnerModal("All Countries Contacts 🌐 (A)")
             }
             className="btn-a"
           >
@@ -105,7 +105,7 @@ const ContactsModal = ({ show, handleClose, title }) => {
 
           <button
             className="btn-b"
-            onClick={() => handleInnerModal("Only Us's Contacts Here 🚩 (B)")}
+            onClick={() => handleInnerModal("Only Us's Contacts 🚩 (B)")}
           >
             <NavLink
               className="text-decoration-none text-white"
@@ -126,9 +126,6 @@ const ContactsModal = ({ show, handleClose, title }) => {
           <label className="form-check-label" htmlFor="onlyEvenCheckbox">
             Only Even
           </label>
-          <div className="d-flex gap-3" id="numbers">
-            {renderNumbers()}
-          </div>
         </div>
       </Modal.Body>
       <Modal.Footer>

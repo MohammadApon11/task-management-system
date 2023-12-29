@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import bd from "/bangladesh.png";
 import us from "/us.png";
+import SecondaryModal from "./SecondaryModal";
 
 const InnerModal = ({ show, handleClose, innerModalTitle, country }) => {
   const [showSecondaryModal, setShowSecondaryModal] = useState(false);
@@ -56,6 +57,9 @@ const InnerModal = ({ show, handleClose, innerModalTitle, country }) => {
             Clear
           </button>
         </div>
+        <p>{
+            `${country.length === 20 ? `Odd and Even both id's number Contact are shown length: ${country.length}` : `Odd and Even both id's number Contact are shown length: ${country.length}`}`
+        }</p>
         <div className="all-contries mx-auto">
           {filteredCountries?.map((singleCountry, index) => (
             <Card
@@ -96,6 +100,11 @@ const InnerModal = ({ show, handleClose, innerModalTitle, country }) => {
           Close
         </button>
       </Modal.Footer>
+      <SecondaryModal
+        show={showSecondaryModal}
+        handleClose={handleCloseSecondaryModal}
+        selectedSingleCountry={selectedSingleCountry}
+      />
     </Modal>
   );
 };
