@@ -9,7 +9,7 @@ const initialTasks = [
   { id: 6, name: "MCQ TEST", status: "completed" },
   { id: 7, name: "Coding Test", status: "completed" },
   { id: 8, name: "My opportunity to work with mediusware", status: "pending" },
-  { id: 9, name: "A chance to prove yourself", status: "pending" },
+  { id: 9, name: "A chance to prove myself", status: "pending" },
   { id: 10, name: "MediusWare in my heart", status: "archive" },
 ];
 
